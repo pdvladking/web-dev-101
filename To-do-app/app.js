@@ -1,14 +1,24 @@
-const input = document.getElementById('taskInput');
-const addBtn = document.getElementById('addBtn');
-const taskList = document.getElementById('taskList');
+const input = document.querySelector('#taskinput');
+const addBtn = document.querySelector('#addBtn');
+const list = document.querySelector('tasklist');
 
-addBtn.addEventListener('click', () => {
+function addTask() {
   const task = input.value.trim();
   if (task === '') return;
 
   const li = document.createElement('li');
   li.textContent = task;
-  taskList.appendChild(li);
 
+  li.addEventListener('click', () => {
+    li.classList.toggle('completed');
+  });
+
+  list.appendChild(li);
   input.value = '';
+}
+
+addBtn.addEventListener('click', addTask);
+
+input.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') addTask();
 });

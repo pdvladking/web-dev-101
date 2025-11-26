@@ -45,3 +45,8 @@ li {
 li:hover {
   background: #f1f1f1;
 }
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
