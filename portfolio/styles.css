@@ -11,9 +11,9 @@
 /* header */
 .logo{
   color: red;
-  font-family: cursive;
+  font-family: Pacifico;
   font-weight: bold;
-  font-size: large;
+  font-size: 2.5rem;
   cursor: pointer;
 }
 
