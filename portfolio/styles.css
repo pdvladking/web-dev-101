@@ -338,3 +338,86 @@ footer{
 html{
   scroll-behavior: smooth;
 }
+
+/* Resonsive Design */
+
+@media(max-width:1024px){
+  /* Header */
+  header{
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  nav{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero{
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .hero-text h1{
+    font-size: 2rem;
+  }
+  
+  .hero-image img{
+    margin-left: 0;
+    max-width: 80%;
+  }
+}
+
+@media(max-width:768px){
+  /* Navbar collapse */
+nav{
+  flex-direction: column;
+  gap: 10px;
+}
+
+.navcta{
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* Hero section */
+.hero{
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.hero-text h1{
+  font-size: 1.6rem;
+}
+
+.hero-text p{
+  font-size: 0.95rem;
+}
+
+.hero-image img{
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Projects grid */
+.project-grid{
+  grid-template-columns: 1fr;
+}
+
+/* .skills grid  */
+.skills-grid{
+  grid-template-columns: 1fr;
+}
+/* Resume grid */
+.resume-grid{
+  grid-template-columns: 1fr;
+}
+
+/* Contact section */
+.contact{
+  padding: 2rem 1rem;
+}
+}
