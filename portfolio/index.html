@@ -14,10 +14,10 @@
   <header>
     <div class="logo">Raja.T</div>
     <nav>
-      <a href="">Projects</a>
-      <a href="">About</a>
-      <a href="">Contact</a>
-      <a href="">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#aboutme">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#resume">Resume</a>
     </nav>
     <button id="theme-toggle">Toggle Theme</button>
   </header>
@@ -34,8 +34,8 @@
         <p>
           I design with intent and build with precision.Every interface, every line of code engineered to be fast, clear, and impactful 
         </p>
-        <button class="cta">View My Work</button>
-        <button class="cta1">Open to freelance</button>
+        <button onclick="location.href='#projects'" class="cta">View My Work</button>
+        <button onclick="location.href='#contact'" class="cta1">Open to freelance</button>
       </div>
       <div class="hero-image">
         <img src="webp/hero.webp" alt="Raja coding">
@@ -53,7 +53,7 @@
         <p>
           Responsive frontend website for an IELTS coaching center.Built with React and styled for clarity, speed, and mobile-first performance.
         </p>
-        <a href="#" class="project-link">View project</a>
+        <a href="https://ielts-institute-ten.vercel.app/" target="_blank" class="project-link">View project</a>
       </article>
 
             <article class="project-card">
@@ -62,7 +62,7 @@
         <p>
           Full-stack product showcase with dynamic cart logic,responsive grid,and clean deployment.
         </p>
-        <a href="#" class="project-link">View project</a>
+        <a href="https://rj-mernstorm.vercel.app/" target="_blank" class="project-link">View project</a>
       </article>
 
       <article class="project-card">
@@ -71,7 +71,7 @@
         <p>
         Robust MERN platform with modular UI,dynamic appointments,patient records, and admin/doctor views
         </p>
-        <a href="#" class="project-link">View project</a>
+        <a href="https://mern-hospital-site.vercel.app/" target="_blank" class="project-link">View project</a>
       </article>
 
       <article class="project-card">
@@ -80,7 +80,7 @@
         <p>
           Narrative-driven Next.js website with locked dark theme,scroll rhythm, and accent borders
         </p>
-        <a href="#" class="project-link">View project</a>
+        <a href="https://www.edentattoonepal.com.np/" target="_blank" class="project-link">View project</a>
       </article>
 
       <article class="project-card">
@@ -89,7 +89,7 @@
         <p>
           Real-time MERN event platform with dynamic template selector,RSVP flow,and responsive layout.
         </p>
-        <a href="#" class="project-link">View project</a>
+        <a href="https://aws-lambda-mern-event-portal.vercel.app/" target="_blank" class="project-link">View project</a>
       </article>
 
       <article class="project-card">
@@ -98,7 +98,7 @@
         <p>
           MERN stack notes app with multi-tenant support,role-bases access, and subscription limits.
         </p>
-        <a href="#" class="project-link">View project</a>
+        <a href="https://notes-app-sigma-navy.vercel.app/" target="_blank" class="project-link">View project</a>
       </article>
       </div>
     </section>
@@ -221,12 +221,12 @@ FCC Data Structures & Algorithms Certification (Certificate No: FCC-DSA-0825)
       <h2>Let's Connect</h2>
       <p>Whether you've got a project,a question, or just want to say hi -- I'd love to hear from you.</p>
 
-      <form id="contact-form">
+      <form action="mailto:pdvladking@gmail.com" method="post" enctype="text/plain" id="contact-form">
         <label for="name">Name</label>
         <input type="text" id="name" name="user_email" placeholder="Your name" required>
 
         <label for="email">Email</label>
-        <input type="email" id="email" name="user_email" placeholder="pdvladking@gmail.com" required>
+        <input type="email" id="email" name="user_email" placeholder="@gmail.com" required>
 
         <label for="message">Message</label>
         <textarea name="message" id="message" placeholder="What's on your mind?" required></textarea>
