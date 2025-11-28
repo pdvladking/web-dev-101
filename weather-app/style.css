@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+input {
+  border-radius: 6px ;
+  margin-right: 10px;
+  border: 2px solid red;
+  padding: .5rem;
+}
+
+button{
+  border: 6px solid red;
+  color: white;
+  background-color: red;
+  padding: .5rem;
+  border-radius: 6px;
+}
